@@ -1,4 +1,62 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*zone header*/
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
 #logo {
   display: flex;
   justify-content: center;
+  font-family: "Shrikhand", "cursif";
+}
+
+/*fin zone header*/
+/*début main*/
+/*section city*/
+.zone_city {
+  display: flex;
+  justify-content: center;
+  background: grey;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  justify-content: center;
+}
+
+/*section restaurants*/
+.restaurants {
+  width: 90%;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
+.card_diner {
+  background-color: white;
+}
+
+.card_diner img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
