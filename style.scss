@@ -12,19 +12,29 @@
      justify-content: center;
      margin:0;
      width:100%;
+     background:white;
+     box-shadow: 3px 3px red;
+     
     }
-#logo{
+#logo, h1{
     display:flex;
     justify-content:center;
-    font-family : 'Shrikhand', 'cursif' ;
-}
+    font-family : 'Shrikhand', 'cursif' ;    
+    
+    font-style: oblique;
+    font-weight: 900;
+    
+} 
+
+
 /*fin zone header*/ 
+
 /*début main*/
     /*section city*/
 .zone_city{
     display:flex;
     justify-content: center;
-    background: grey;
+    background: #eaeaea;
 }
 .map{
     display:flex;
@@ -34,20 +44,112 @@
 .city{
     justify-content: center;
 }
+
+.reservation{   
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width:100%;
+    padding:35px;
+    text-align: center;
+    justify-content: center;
+    background-color:#f6f6f6; 
+
+    .reservation_title{
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+        font-weight: bold;
+    }       
+    .reservation_stitle{
+        display:flex;
+        text-align: center; 
+     }         
+    .reservation_recherche{
+        display: flex;
+        text-align: center;
+        background-color: black;
+        
+     } 
+}  
+ 
+
+.fonctionnement{       
+    width:100%;
+ }
+    .contenaire_tri{
+        width:100%;
+    }
+    .tri_title{
+        font-weight: bold;
+    }
+    .tri_liste{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+    }
+              
+         .tri_list{    
+         background-color:#f6f6f6;        
+         border: 2px solid #f2f2f2;
+         border-radius: 30px;
+         height: auto;        
+         width: 100%;
+                         
+    }
+        
+
+
         /*section restaurants*/
 .restaurants{
-    width:90%
+    width:100%;
+      
+}
+.contenair2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.restaurantS_lot{
+    display:flex;
+    flex-direction: column;
+}
+.card_resto{
+    display:flex;
+    flex-direction: column;
 }
 .card_link{
+  text-decoration: none;      
+}
+.card_diner{   
+     background-color:white;
+    width: 90%;
+    height: 160px;
+    border-radius: 20px 0 20px 0;
+    background-color: white;
+     border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px  #0000003e;
+    padding: 5px 5px 0 5px;
     text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+     cursor: pointer;
+     transition: 0.1s;
+}    
 
-}
-.card_diner{
-    background-color:white;
-
-}
-.card_diner img{
+    .card_diner img{
     width:100%;
-    height:200px;
-    object-fit: cover;
+    height:50px;
+    object-fit:cover;
+    }
+   .elementcoeur{
+    display:flex;
+    background-color: azure;
+}
+
+footer{
+    display:flex;
+    background-color: grey;
+    list-style: none;
+    
 }

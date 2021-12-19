@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https : //fonts.googleapis.com/css2? famille= Roboto:wght@400;500;700;900 &famille = Shrikhand & display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2? famille= Roboto:wght@400;500;700;900 &famille = Shrikhand & display=swap" rel="stylesheet">
 
 
 
@@ -20,9 +20,10 @@
 <body>
                                       <!--HEADER-->
   <header>
-<div id="logo">
-  <h1 class="logo">Ohmyfood</h1>
-    <img src=./logo/ohmyfood@2x.svg alt="Ohmyfood logo">
+<div id="logo"> 
+    <h1 class>ohmyfood</h1>
+    
+    
 </div>
   </header>  
                                     <!--FIN HEADER-->
@@ -32,59 +33,66 @@
       <span class="map"><i class="fas fa-map-marker-alt"></i></span>
       <h4 class="city">Paris, Belleville</h4>
     </section>
+
     <section class="reservation">
       <h2 class="reservation_title">Réservez le menu qui vous convient</h2>
-      <p class="reservation_stitle">Découvrez des restaurants d'exception,séléctionnés par nos soins</p>
-      <span class="reservation_recherche">Explorer nos restaurants</span>      
+        <p class="reservation_stitle">Découvrez des restaurants d'exception,séléctionnés par nos soins</p>
+        <span class="reservation_recherche">Explorer nos restaurants</span>      
     </section>
+    
     <section class="fonctionnement">
       <div class="contenaire_tri">
         <h2 class="tri_title">Fonctionnement</h2>
         <ol class="tri_liste">
           <li class="tri_list">
-           <span class="numero">1</span> 
-           <span class="icone"> </span>
+           <span class="numero"></span> 
+           <span class="icone"><i class="fa-mobile-alt fas tuto__icon" aria-hidden="true"></i> </span>
             <h3 class="title_list">Choisissez un restaurant</h3>
           </li>
           <li class="tri_list">
             <span class="numero">2</span> 
-            <span class="icone"></span>
+            <span class="icone"><i class="fa-list-ul fas tuto__icon" aria-hidden="true"></i></span>
             <h3 class="title_list">Composer votre menu </h3>
           </li>
          
           <li class="tri_list">
             <span class="numero">3</span> 
-            <span class="icone"> </span>
+            <span class="icone"><i class="fa-store fas tuto__icon" aria-hidden="true"></i> </span>
             <h3 class="title_list">Dégustez au restaurant</h3>
           </li>
         </ol>
       </div>
     </section>
+       <!--LES CARTES-->
     <section class="restaurants">
       <div class="contenair2">
-         <h2 class="restaurants_title">Restaurants</h2>        
-       <article class="card_resto">
-        <a href="#"class="card_link" >
-         <div class="card_diner">
+         <h2 class="restaurants_title">Restaurants</h2> 
+       <div class="restaurants_lot ">     
+        <article class="card_resto">
+         <a href="#"class="card_link" >
+          <div class="card_diner">
           <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"alt="restaurant jay-wennington">
-         </div>
-         <div class="zone _texte">
+          </div>
+          <div class="zone _texte">
           <div class="text">
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
           </div>
-            <span class="elementcoeur"></span>
+            <span class="elementcoeur">
+              <i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i>
+            </span>
           </div>
-        </a>  
-        <a href="#"class="card_link" >
-        <div class="card_diner">
+        </a>
+           
+         <a href="#"class="card_link" >
+         <div class="card_diner">
           <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"alt="restaurant stil">
           <div class="zone _texte">
             <div class="text">
               <h3>La note enchantée</h3>
               <p>Charonne</p>
             </div>
-              <span class="elementcoeur"></span>
+              <span class="elementcoeur"><i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i></span>
             </div>
         </div>
         
@@ -97,7 +105,7 @@
             <h3>A la française</h3>
             <p>Cité Rouge</p>
             </div> 
-              <span class="elementcoeur"></span>
+              <span class="elementcoeur"><i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i></span>
             </div>
         </div>
         </a>  
@@ -110,11 +118,14 @@
               <h3>Le délice des sens</h3>
               <p>Folie-Méricourt</p>
             </div>
-              <span class="elementcoeur"></span>
-            </div>
+            <span class="elementcoeur"><i class="card__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i></span>
+          </div>
         </div>
         </a>  
-       </article>
+        
+       </article>     
+     
+       </div>
       </div>    
            
     </section>
@@ -126,6 +137,7 @@
   <nav class="zone fotter">
     <ul class>
       <li>Proposer un restaurant</li>
+      <span> </span>
       <li>Devenir partenaire</li>
       <li>Mentions légales</li>
       <li>Contact</li>
