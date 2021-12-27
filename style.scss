@@ -68,7 +68,17 @@
     .reservation_recherche{
         display: flex;
         text-align: center;
-        background-color: black;
+        background-color: #9356dc;
+        border-radius: 30px;
+        border:#9356dc;
+        width:auto;
+        height:50px;
+        align-items:center;
+        justify-content: center;
+        box-shadow:3px 3px 3px #eaeaea;
+        color:white;
+        font-size: 12px;
+        
         
      } 
 }  
@@ -159,15 +169,15 @@
     width:100%;
       
 }
-.contenair2{
+.restaurants_title{
+    margin-left:20px;
+}
+.contenair_card{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.restaurantS_lot{
-    display:flex;
-    flex-direction: column;
-}
+
 .card_resto{
     display:flex;
     flex-direction: column;
@@ -175,10 +185,12 @@
 .card_link{
   text-decoration: none;      
 }
-.card_diner{   
+.card_diner{  
+    display:flex;
+    flex-direction: column; 
      background-color:white;
-    width: 90%;
-    height: 160px;
+    width: 95%;
+    height: 230px;
     border-radius: 20px 0 20px 0;
     background-color: white;
      border-radius: 20px;
@@ -189,11 +201,16 @@
     margin-bottom: 10px;
      cursor: pointer;
      transition: 0.1s;
+     list-style: none;
+     
 }    
+.card_image{
+    display: flex;
+}
 
     .card_diner img{
     width:100%;
-    height:50px;
+    height:100px;
     object-fit:cover;
     }
    .elementcoeur{
