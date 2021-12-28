@@ -45,6 +45,7 @@ header {
   justify-content: center;
 }
 
+/*section reservation*/
 .reservation {
   display: flex;
   flex-wrap: wrap;
@@ -80,6 +81,7 @@ header {
   font-size: 12px;
 }
 
+/*section fonctionnement*/
 .fonctionnement {
   width: 100%;
 }
@@ -201,18 +203,55 @@ header {
 
 .card_diner img {
   width: 100%;
-  height: 100px;
+  height: 135px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 
-.elementcoeur {
+.nouveaute {
+  position: absolute;
+  right: 20px;
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 6px;
+}
+
+.zone_texte {
   display: flex;
-  background-color: azure;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.zone_texte h3 {
+  color: black;
+}
+.zone_texte p {
+  color: black;
+  font-weight: normal;
+}
+.zone_texte .elementcoeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 23px;
+  color: black;
+  align-self: center;
+  margin: 10px 10px 25px 30px;
 }
 
 footer {
   display: flex;
-  background-color: grey;
+  background-color: #353535;
+  list-style: none;
+}
+footer h3 {
+  font-style: oblique;
+  font-family: "Shrikhand", "cursif";
+  color: white;
+}
+footer li {
+  color: white;
   list-style: none;
 }/*# sourceMappingURL=style.css.map */
