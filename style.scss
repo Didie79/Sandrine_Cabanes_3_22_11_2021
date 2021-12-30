@@ -147,16 +147,16 @@
         margin:10px 0 ;
         background-color:#f5edff;
         .numero{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color:#9356dc ;
-        border-radius:50%;
-        border:#9356dc;            
-        width: 22px;
-        height:22px;
-        margin:0 -15px; 
-        color: white;           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#9356dc ;
+            border-radius:50%;
+            border:#9356dc;            
+            width: 22px;
+            height:22px;
+            margin:0 -15px; 
+            color: white;           
               
         }   
         .icone{
@@ -175,12 +175,13 @@
 .restaurants_title{
     margin-left:20px;
 }
+        /*zone contenaire des cartes*/
 .contenair_card{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
+        /*les cartes*/
 .card_resto{
     display:flex;
     flex-direction: column;
@@ -223,6 +224,7 @@
          background-color:#99e2d0;
          color:#008766;
          padding:6px;
+         margin-top:5px;
     }
     .zone_texte{
         display:flex;
@@ -267,4 +269,9 @@ footer{
         color:white;
         list-style: none;
     }
+}
+
+/*VERSION TABLET*/
+@media screen {
+    
 }

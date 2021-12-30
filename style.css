@@ -163,12 +163,14 @@ header {
   margin-left: 20px;
 }
 
+/*zone contenaire des cartes*/
 .contenair_card {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 
+/*les cartes*/
 .card_resto {
   display: flex;
   flex-direction: column;
@@ -215,6 +217,7 @@ header {
   background-color: #99e2d0;
   color: #008766;
   padding: 6px;
+  margin-top: 5px;
 }
 
 .zone_texte {
@@ -254,4 +257,6 @@ footer h3 {
 footer li {
   color: white;
   list-style: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*VERSION TABLET*//*# sourceMappingURL=style.css.map */
