@@ -268,8 +268,21 @@ footer .icone_partenaire {
 
 /*VERSION TABLET*/
 @media (min-width: 768px) {
-  .reservation_stitle {
-    font-size: 20px;
+  .reservation .reservation_title {
+    font-size: 30px;
+  }
+  .reservation .reservation_stitle {
+    font-size: 18px;
+  }
+  .reservation .reservation_recherche {
+    width: 550px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .fonctionnement .contenaire_tri .tri_liste {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 /*VERSION DESTOP*//*# sourceMappingURL=style.css.map */

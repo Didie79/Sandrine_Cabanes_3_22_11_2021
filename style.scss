@@ -31,23 +31,23 @@
 
 /*début main*/
     /*section city*/
-.zone_city{
-    display:flex;
-    justify-content: center;
-    background: #eaeaea;
+    .zone_city{
+         display:flex;
+        justify-content: center;
+         background: #eaeaea;
     
 }
-.map{
-    display:flex;
-    align-items: center;
+    .map{
+        display:flex;
+        align-items: center;
     
 }
-.city{
-    justify-content: center;
-    padding-left:5px;
+    .city{
+        justify-content: center;
+        padding-left:5px;
 }
             /*section reservation*/
-.reservation{   
+    .reservation{   
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
@@ -64,11 +64,11 @@
     .reservation_stitle{        
         text-align: center;       
         margin-top:3px;
-     }         
+    }         
     .reservation_recherche{
         display: flex;
         text-align: center;      
-         background: linear-gradient(to top, #9356dc, #FF79DA );
+        background: linear-gradient(to top, #9356dc, #FF79DA );
         border-radius: 30px;
         border: #FF79DA ;
         width:180px;
@@ -85,22 +85,22 @@
 }  
  
         /*section fonctionnement*/
-.fonctionnement{       
-    width:100%;
+    .fonctionnement{       
+        width:100%;
 
     .contenaire_tri{
         width:95%;
         
-    }
+ }
     .tri_title{
         font-weight: bold;
         margin-left:30px;
-    }
+}
     .tri_liste{
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
-    }
+}
               
     .no_list{  
         display:flex;  
@@ -133,7 +133,7 @@
             margin:0 1.7rem;
         }                     
     }
-    .no_listviolet{
+        .no_listviolet{
         display:flex;  
         align-items: center;               
         border: 2px solid #f2f2f2;
@@ -181,14 +181,14 @@
     flex-wrap: nowrap;
 }
         /*les cartes*/
-.card_resto{
+    .card_resto{
     display:flex;
     flex-direction: column;
 }
-.card_link{
+    .card_link{
   text-decoration: none;      
 }
-.card_diner{  
+    .card_diner{  
     display:flex;
     flex-direction: column; 
     background-color:white;
@@ -206,7 +206,7 @@
      list-style: none; 
      
 }    
-.card_image{
+    .card_image{
     display: flex;
 }
 
@@ -287,11 +287,30 @@ footer{
 /*VERSION TABLET*/
 
 @media(min-width:768px){
-    .reservation_stitle{
-      font-size:20px;
-
+.reservation{
+    .reservation_title{
+        font-size: 30px;
     }
+    .reservation_stitle{
+        font-size:18px;
+    }
+    .reservation_recherche{
+         width:550px;
+         height:50px;
+         font-size:18px;
+    }
+}
+    
+    .fonctionnement{
+        .contenaire_tri{
+        .tri_liste{
+            flex-direction: row;
+            flex-wrap: nowrap;
 
+        }
+        }
+        
+    }
 }
 /*VERSION DESTOP*/
 @media screen and (min-width:992px){
