@@ -16,14 +16,12 @@ header {
   margin: 0;
   width: 100%;
   background: white;
-  box-shadow: 3px 3px red;
 }
 
 #logo, h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", "cursif";
-  font-style: oblique;
   font-weight: 900;
 }
 
@@ -43,6 +41,7 @@ header {
 
 .city {
   justify-content: center;
+  padding-left: 5px;
 }
 
 /*section reservation*/
@@ -50,35 +49,32 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
-  padding: 35px;
   text-align: center;
   justify-content: center;
   background-color: #f6f6f6;
+  padding: 34px;
 }
 .reservation .reservation_title {
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
   font-weight: bold;
 }
 .reservation .reservation_stitle {
-  display: flex;
   text-align: center;
+  margin-top: 3px;
 }
 .reservation .reservation_recherche {
   display: flex;
   text-align: center;
-  background-color: #9356dc;
+  background: linear-gradient(to top, #9356dc, #FF79DA);
   border-radius: 30px;
-  border: #9356dc;
-  width: auto;
-  height: 50px;
+  border: #FF79DA;
+  width: 180px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   box-shadow: 3px 3px 3px #eaeaea;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /*section fonctionnement*/
@@ -184,16 +180,15 @@ header {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 95%;
-  height: 230px;
+  width: 90%;
+  height: 268px;
   border-radius: 20px 0 20px 0;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 0px 3px 1px #0000003e;
-  padding: 5px 5px 0 5px;
   text-decoration: none;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   cursor: pointer;
   transition: 0.1s;
   list-style: none;
@@ -205,7 +200,7 @@ header {
 
 .card_diner img {
   width: 100%;
-  height: 135px;
+  height: 195px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -216,8 +211,9 @@ header {
   right: 20px;
   background-color: #99e2d0;
   color: #008766;
-  padding: 6px;
-  margin-top: 5px;
+  font-weight: bold;
+  padding: 6px 5px;
+  margin: 10px;
 }
 
 .zone_texte {
@@ -226,13 +222,16 @@ header {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
+  line-height: 3px;
 }
 .zone_texte h3 {
   color: black;
+  padding-left: 20px;
 }
 .zone_texte p {
   color: black;
   font-weight: normal;
+  padding-left: 20px;
 }
 .zone_texte .elementcoeur {
   display: flex;
@@ -248,15 +247,29 @@ footer {
   display: flex;
   background-color: #353535;
   list-style: none;
+  margin-top: 40px;
 }
 footer h3 {
-  font-style: oblique;
   font-family: "Shrikhand", "cursif";
   color: white;
+  margin-left: 40px;
 }
 footer li {
   color: white;
   list-style: none;
 }
+footer .icone_diner, footer .icone_partenaire {
+  padding-right: 12px;
+}
+footer .icone_partenaire {
+  font-size: small;
+  padding-right: 8px;
+}
 
-/*VERSION TABLET*//*# sourceMappingURL=style.css.map */
+/*VERSION TABLET*/
+@media (min-width: 768px) {
+  .reservation_stitle {
+    font-size: 20px;
+  }
+}
+/*VERSION DESTOP*//*# sourceMappingURL=style.css.map */
