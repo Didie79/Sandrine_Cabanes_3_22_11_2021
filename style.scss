@@ -218,7 +218,7 @@
     }
     .nouveaute{
         position: absolute;
-         right:20px ;
+         right:30px ;
          background-color:#99e2d0;
          color:#008766;
          font-weight: bold;
@@ -270,9 +270,13 @@ footer{
         color:white;
         margin-left:40px;
     }
+    .listcontact{
+        line-height: 25px;
+    }
     li{
         color:white;
         list-style: none;
+        
     }
     .icone_diner,.icone_partenaire{
         padding-right:12px;
@@ -284,33 +288,78 @@ footer{
     }
 }
 
-/*VERSION TABLET*/
+                /*VERSION TABLET*/
+                /*section card zone restaurant*/
+@media(min-width:600px){
+    .restaurants{
+        .card_resto{
+          flex-direction:row; 
+          flex-wrap: wrap; 
+        }
+        .card_link{
+            width:50%;
+        }
+        .nouveaute{
+          right:auto;               
+            
+        }
 
-@media(min-width:768px){
-.reservation{
-    .reservation_title{
-        font-size: 30px;
-    }
-    .reservation_stitle{
-        font-size:18px;
-    }
-    .reservation_recherche{
-         width:550px;
-         height:50px;
-         font-size:18px;
     }
 }
-    
-    .fonctionnement{
-        .contenaire_tri{
-        .tri_liste{
-            flex-direction: row;
-            flex-wrap: nowrap;
-
+            /*header*/
+@media(min-width:768px){
+    .reservation{
+        .reservation_title{
+            font-size: 30px;
         }
+        .reservation_stitle{
+             font-size:18px;
+        }
+        .reservation_recherche{
+             width:550px;
+             height:50px;
+             font-size:18px;
+        }
+    }
+     /*zone fonctionnement*/
+    .fonctionnement{
+        width:100%; 
+        .contenaire_tri{                  
+            .tri_liste{
+                flex-direction: row;
+                flex-wrap: nowrap; 
+                
+                .l2{
+                     order:1;            
+                 } 
+                .l3{
+                    margin-top:60px;
+                } 
+                
+                .no_list,.no_listviolet{
+                    height:50px;
+                                                           
+                } 
+                h4{
+                    text-align:left;
+                }             
+            }            
+            
         }
         
     }
+
+                 /*zone FOOTER*/
+   
+    .listcontact{  
+        display:flex;
+         flex-direction:row;
+         flex-wrap:wrap;            
+    }
+    .contact{
+        padding-left:20px;
+    }
+
 }
 /*VERSION DESTOP*/
 @media screen and (min-width:992px){

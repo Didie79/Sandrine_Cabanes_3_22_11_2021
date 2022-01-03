@@ -208,7 +208,7 @@ header {
 
 .nouveaute {
   position: absolute;
-  right: 20px;
+  right: 30px;
   background-color: #99e2d0;
   color: #008766;
   font-weight: bold;
@@ -254,6 +254,9 @@ footer h3 {
   color: white;
   margin-left: 40px;
 }
+footer .listcontact {
+  line-height: 25px;
+}
 footer li {
   color: white;
   list-style: none;
@@ -267,6 +270,20 @@ footer .icone_partenaire {
 }
 
 /*VERSION TABLET*/
+/*section card zone restaurant*/
+@media (min-width: 600px) {
+  .restaurants .card_resto {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants .card_link {
+    width: 50%;
+  }
+  .restaurants .nouveaute {
+    right: auto;
+  }
+}
+/*header*/
 @media (min-width: 768px) {
   .reservation .reservation_title {
     font-size: 30px;
@@ -280,9 +297,36 @@ footer .icone_partenaire {
     font-size: 18px;
   }
 
+  /*zone fonctionnement*/
+  .fonctionnement {
+    width: 100%;
+  }
   .fonctionnement .contenaire_tri .tri_liste {
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+  .fonctionnement .contenaire_tri .tri_liste .l2 {
+    order: 1;
+  }
+  .fonctionnement .contenaire_tri .tri_liste .l3 {
+    margin-top: 60px;
+  }
+  .fonctionnement .contenaire_tri .tri_liste .no_list, .fonctionnement .contenaire_tri .tri_liste .no_listviolet {
+    height: 50px;
+  }
+  .fonctionnement .contenaire_tri .tri_liste h4 {
+    text-align: left;
+  }
+
+  /*zone FOOTER*/
+  .listcontact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    padding-left: 20px;
   }
 }
 /*VERSION DESTOP*//*# sourceMappingURL=style.css.map */
