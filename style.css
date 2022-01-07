@@ -153,30 +153,28 @@ header {
 /*section restaurants*/
 .restaurants {
   width: 100%;
+  /*zone contenaire des cartes*/
+  /*les cartes*/
 }
-
-.restaurants_title {
+.restaurants .restaurants_title {
   margin-left: 20px;
+  margin-top: 50px;
 }
-
-/*zone contenaire des cartes*/
-.contenair_card {
+.restaurants .contenair_card {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
-
-/*les cartes*/
-.card_resto {
+.restaurants .card_resto {
   display: flex;
   flex-direction: column;
 }
-
-.card_link {
+.restaurants .card_link {
   text-decoration: none;
 }
-
-.card_diner {
+.restaurants .card_diner {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -193,20 +191,17 @@ header {
   transition: 0.1s;
   list-style: none;
 }
-
-.card_image {
+.restaurants .card_image {
   display: flex;
 }
-
-.card_diner img {
+.restaurants .card_diner img {
   width: 100%;
   height: 195px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
-.nouveaute {
+.restaurants .nouveaute {
   position: absolute;
   right: 30px;
   background-color: #99e2d0;
@@ -215,8 +210,7 @@ header {
   padding: 6px 5px;
   margin: 10px;
 }
-
-.zone_texte {
+.restaurants .zone_texte {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -224,16 +218,16 @@ header {
   justify-content: space-between;
   line-height: 3px;
 }
-.zone_texte h3 {
+.restaurants .zone_texte h4 {
   color: black;
   padding-left: 20px;
 }
-.zone_texte p {
+.restaurants .zone_texte p {
   color: black;
   font-weight: normal;
   padding-left: 20px;
 }
-.zone_texte .elementcoeur {
+.restaurants .zone_texte .elementcoeur {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -247,7 +241,6 @@ footer {
   display: flex;
   background-color: #353535;
   list-style: none;
-  margin-top: 40px;
 }
 footer h3 {
   font-family: "Shrikhand", "cursif";
@@ -272,19 +265,6 @@ footer .icone_partenaire {
 /*VERSION TABLET*/
 /*section card zone restaurant*/
 @media (min-width: 600px) {
-  .restaurants .card_resto {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .restaurants .card_link {
-    width: 50%;
-  }
-  .restaurants .nouveaute {
-    right: auto;
-  }
-}
-/*header*/
-@media (min-width: 768px) {
   .reservation .reservation_title {
     font-size: 30px;
   }
@@ -297,6 +277,20 @@ footer .icone_partenaire {
     font-size: 18px;
   }
 
+  .restaurants .card_resto {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants .card_link {
+    width: 50%;
+  }
+  .restaurants .nouveaute {
+    right: auto;
+    margin-left: 32%;
+  }
+}
+/*header*/
+@media (min-width: 768px) and (min-width: 991px) {
   /*zone fonctionnement*/
   .fonctionnement {
     width: 100%;
@@ -329,4 +323,40 @@ footer .icone_partenaire {
     padding-left: 20px;
   }
 }
-/*VERSION DESTOP*//*# sourceMappingURL=style.css.map */
+/*VERSION DESTOP*/
+@media screen and (min-width: 992px) {
+  .reservation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .reservation .reservation_title {
+    font-size: 30px;
+  }
+  .reservation .reservation_stitle {
+    font-size: 18px;
+  }
+  .reservation .reservation_recherche {
+    width: 500px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .reservation .r2 {
+    order: 1;
+  }
+
+  .restaurants .card_link {
+    width: 25%;
+  }
+  .restaurants .card_diner {
+    width: 90%;
+    height: 268px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+  .restaurants .nouveaute {
+    right: auto;
+    margin-left: 15%;
+  }
+}/*# sourceMappingURL=style.css.map */
