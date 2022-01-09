@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*zone header*/
+/*zone header PAGE COMMUNE*/
 header {
   display: flex;
   justify-content: center;
@@ -26,6 +26,7 @@ header {
 }
 
 /*fin zone header*/
+/*PAGE ACCUEIL*/
 /*début main*/
 /*section city*/
 .zone_city {
@@ -44,7 +45,7 @@ header {
   padding-left: 5px;
 }
 
-/*section reservation*/
+/*section reservation  */
 .reservation {
   display: flex;
   flex-wrap: wrap;
@@ -262,6 +263,73 @@ footer .icone_partenaire {
   padding-right: 8px;
 }
 
+/*PAGE DEUX A QUATRE*/
+.fond_page {
+  background-color: #f6f6f6;
+  border-radius: 10% 10% 0 0;
+  width: 100%;
+}
+.fond_page .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.fond_page .menu .title_p {
+  margin-left: 40px;
+  padding-top: 50px;
+}
+.fond_page .menu .icone_heart {
+  padding-right: 25px;
+  font-size: 25px;
+}
+.fond_page .h3menu {
+  padding-left: 25px;
+}
+.fond_page .card_fond {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  width: 90%;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px 1px #0000001e;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+  list-style: none;
+}
+.fond_page .card_fond .card_eat {
+  line-height: 2px;
+  padding-left: 10px;
+}
+.fond_page .card_fond .eatprice {
+  padding: 2.5rem 1.2rem 0 0;
+  font-weight: bold;
+}
+.fond_page .card_fond .eatcolor {
+  margin-right: 4rem;
+}
+.fond_page .button {
+  display: flex;
+  text-align: center;
+  background: linear-gradient(to top, #9356dc, #FF79DA);
+  border-radius: 30px;
+  border: #FF79DA;
+  width: 180px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 3px #eaeaea;
+  color: white;
+  font-size: 14px;
+}
+
 /*VERSION TABLET*/
 /*section card zone restaurant*/
 @media (min-width: 600px) {
@@ -290,7 +358,7 @@ footer .icone_partenaire {
   }
 }
 /*header*/
-@media (min-width: 768px) and (min-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   /*zone fonctionnement*/
   .fonctionnement {
     width: 100%;

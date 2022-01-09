@@ -8,7 +8,7 @@
         
               
 }
-            /*zone header*/
+            /*zone header PAGE COMMUNE*/
     header{
      display:flex;
      justify-content: center;
@@ -28,7 +28,7 @@
 
 
 /*fin zone header*/ 
-
+                            /*PAGE ACCUEIL*/  
 /*début main*/
     /*section city*/
     .zone_city{
@@ -46,7 +46,7 @@
         justify-content: center;
         padding-left:5px;
 }
-            /*section reservation*/
+            /*section reservation  */
     .reservation{   
     display:flex;
     flex-wrap:wrap;
@@ -77,11 +77,8 @@
         justify-content: center;
         box-shadow:3px 3px 3px #eaeaea;
         color:white;
-        font-size: 14px;
-        
-        
-        
-     } 
+        font-size:14px;                
+    } 
 }  
  
         /*section fonctionnement*/
@@ -91,16 +88,16 @@
     .contenaire_tri{
         width:95%;
         
- }
+    }
     .tri_title{
         font-weight: bold;
         margin-left:30px;
-}
+    }
     .tri_liste{
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
-}
+    }
               
     .no_list{  
         display:flex;  
@@ -133,7 +130,7 @@
             margin:0 1.7rem;
         }                     
     }
-        .no_listviolet{
+    .no_listviolet{
         display:flex;  
         align-items: center;               
         border: 2px solid #f2f2f2;
@@ -144,23 +141,24 @@
         list-style: none; 
         margin:10px 0 ;
         background-color:#f5edff;
-        .numero{
+
+            .numero{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color:#9356dc ;
+            background-color:#9356dc;
             border-radius:50%;
             border:#9356dc;            
             width: 22px;
             height:22px;
             margin:0 -15px; 
             color: white;           
-              
-        }   
-        .icone{
-         color:#9356dc;
-        margin:0 1.7rem;
-         }
+             
+            }   
+            .icone{
+            color:#9356dc;
+             margin:0 1.7rem;
+            }   
     } 
 }        
 
@@ -250,16 +248,11 @@
             font-size:23px;
             color:black;
             align-self: center;
-            margin:10px 10px 25px 30px;
-            
-            
-        }
-        
+            margin:10px 10px 25px 30px;                     
+        }      
     }
-}   
+}  
    
-
-
 footer{
     display:flex;
     background-color:#353535;
@@ -289,7 +282,77 @@ footer{
     }
 }
 
-                /*VERSION TABLET*/
+                    /*PAGE DEUX A QUATRE*/
+.fond_page{
+    background-color:#f6f6f6;
+    border-radius: 10% 10% 0 0;  
+    width:100%;    
+
+    .menu{
+        display:flex;  
+        flex-direction: row;
+        flex-wrap: nowrap;   
+        justify-content: space-between; 
+        align-items:baseline;                                             
+        .title_p{
+        margin-left:40px; 
+        padding-top:50px;          
+        }                                                                        
+        .icone_heart{
+        padding-right:25px;
+        font-size: 25px;                                 
+        }  
+         
+    }                                                                                                 
+        .h3menu{
+   padding-left: 25px;
+        }
+    .card_fond{
+    display:flex;  
+    flex-direction: row;  
+    flex-wrap:wrap;  
+    justify-content: space-between;  
+    background-color:white;
+    width: 90%;
+    height: 70px;
+    border-radius: 20px;       
+    box-shadow: 0 1px 3px 1px  #0000001e;    
+    text-decoration: none;
+    margin-left:20px;
+    margin-bottom: 25px;
+     cursor: pointer;
+     transition: 0.1s;
+     list-style: none; 
+
+        .card_eat{            
+            line-height: 2px;
+            padding-left:10px;
+        }
+        .eatprice{
+          padding: 2.5rem 1.2rem 0 0; 
+          font-weight: bold;            
+        }
+        .eatcolor{
+            margin-right: 4rem;
+        }
+        
+    }
+    .button{
+        display: flex;
+        text-align: center;      
+        background: linear-gradient(to top, #9356dc, #FF79DA );
+        border-radius: 30px;
+        border: #FF79DA ;
+        width:180px;
+        height:40px;
+        align-items:center;
+        justify-content: center;
+        box-shadow:3px 3px 3px #eaeaea;
+        color:white;
+        font-size:14px;    
+        }
+}         
+    /*VERSION TABLET*/
                 /*section card zone restaurant*/
 @media(min-width:600px){
     .reservation{
@@ -322,7 +385,7 @@ footer{
     }
 }
             /*header*/
-@media(min-width:768px)and (min-width:991px){
+@media(min-width:768px)and (max-width:991px){
     
      /*zone fonctionnement*/
     .fonctionnement{
@@ -373,8 +436,7 @@ footer{
         align-items:baseline;
 
         .reservation_title{
-            font-size: 30px;
-            
+            font-size: 30px;            
         }
         .reservation_stitle{
              font-size:18px;
@@ -382,13 +444,11 @@ footer{
         .reservation_recherche{            
              width:500px;
              height:60px;
-             font-size:18px;             
-            
-             
-        }
+             font-size:18px;            
+                        
+        } 
         .r2{
-        order:1;
-        ;
+        order:1;        
         }
     }
 
@@ -408,7 +468,8 @@ footer{
             right:auto; 
             margin-left:15%;              
               
-          }     
+          }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
     }
+
 }
