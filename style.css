@@ -268,17 +268,19 @@ footer .icone_partenaire {
 /*PAGE DEUX A QUATRE*/
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  position: absolute;
 }
 header .arrow {
-  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 20px;
 }
 
 .imgfond img {
   width: 100%;
   height: 350px;
-  top: 2.5rem;
+  top: 4.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -300,7 +302,7 @@ header .arrow {
 }
 .fond_page .menu .title_p {
   margin-left: 40px;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .fond_page .menu .icone_heart {
   padding-right: 25px;
@@ -315,12 +317,12 @@ header .arrow {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: white;
-  width: 92%;
+  width: 95%;
   height: 70px;
   border-radius: 20px;
   box-shadow: 0 1px 3px 1px #0000001e;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 25px;
   cursor: pointer;
   transition: 0.1s;
@@ -329,12 +331,14 @@ header .arrow {
 .fond_page .card_fond .card_eat {
   line-height: 2px;
   padding-left: 10px;
-  max-width: calc(100% - 50px);
+  max-width: calc(100% - 40px);
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 .fond_page .card_fond .eatprice {
-  padding: 2.4rem 1rem 0 0;
+  padding: 2.2rem 1rem 0 0;
   font-weight: bold;
-  max-width: 50px;
+  max-width: 40px;
 }
 .fond_page .buttons {
   display: flex;
