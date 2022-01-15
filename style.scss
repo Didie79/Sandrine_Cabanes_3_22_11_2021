@@ -357,10 +357,14 @@ footer{
             line-height: 2px;
             padding-left:10px;
             max-width:calc(100% - 40px);
+                     
+        }    
+          h4{
             text-overflow:ellipsis;
-            white-space:wrap;
+            overflow: hidden;
+            white-space:wrap; 
         }
-        
+               
         .eatprice{
           padding: 2.2rem 1rem 0 0; 
           font-weight: bold; 
@@ -427,7 +431,7 @@ footer{
     }
 }
             /*header*/
-@media(min-width:768px)and (max-width:991px){
+@media(min-width:768px){
     
      /*zone fonctionnement*/
     .fonctionnement{
@@ -469,30 +473,8 @@ footer{
     }
 
 }
-/*VERSION DESTOP*/
-@media screen and (min-width:992px){
-    .reservation{
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-items:baseline;
-
-        .reservation_title{
-            font-size: 30px;            
-        }
-        .reservation_stitle{
-             font-size:18px;
-        }
-        .reservation_recherche{            
-             width:500px;
-             height:60px;
-             font-size:18px;            
-                        
-        } 
-        .r2{
-        order:1;        
-        }
-    }
+        /*VERSION DESTOP*/
+@media screen and (min-width:992px){    
 
     .restaurants{      
          .card_link{
@@ -504,14 +486,42 @@ footer{
             margin-left:15px;
             margin-bottom: 25px;           
              
-            }    
+        }    
         
         .nouveaute{
             right:auto; 
             margin-left:15%;              
               
-          }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
     }
 
+}
+@media screen and (min-width:1148px){  
+
+    .reservation{
+     flex-direction: row; 
+     flex-wrap: wrap;
+     justify-content:space-between;
+     align-items:baseline;
+
+        .reservation_title{
+        font-size: 30px;            
+        }
+        .reservation_stitle{
+         font-size:18px;
+        }
+        .reservation_recherche{            
+         width:500px;
+         height:60px;
+         font-size:18px; 
+        } 
+        .r2{
+    order:1;        
+         }
+         .r3{
+             align-self:flex-end;
+             margin-top: 50px;
+         }
+    }
 }

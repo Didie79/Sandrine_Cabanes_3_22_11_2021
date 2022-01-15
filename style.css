@@ -332,7 +332,10 @@ header .arrow {
   line-height: 2px;
   padding-left: 10px;
   max-width: calc(100% - 40px);
+}
+.fond_page .card_fond h4 {
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: wrap;
 }
 .fond_page .card_fond .eatprice {
@@ -389,7 +392,7 @@ header .arrow {
   }
 }
 /*header*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   /*zone fonctionnement*/
   .fonctionnement {
     width: 100%;
@@ -424,6 +427,21 @@ header .arrow {
 }
 /*VERSION DESTOP*/
 @media screen and (min-width: 992px) {
+  .restaurants .card_link {
+    width: 25%;
+  }
+  .restaurants .card_diner {
+    width: 90%;
+    height: 268px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+  .restaurants .nouveaute {
+    right: auto;
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 1148px) {
   .reservation {
     flex-direction: row;
     flex-wrap: wrap;
@@ -444,18 +462,8 @@ header .arrow {
   .reservation .r2 {
     order: 1;
   }
-
-  .restaurants .card_link {
-    width: 25%;
-  }
-  .restaurants .card_diner {
-    width: 90%;
-    height: 268px;
-    margin-left: 15px;
-    margin-bottom: 25px;
-  }
-  .restaurants .nouveaute {
-    right: auto;
-    margin-left: 15%;
+  .reservation .r3 {
+    align-self: flex-end;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
