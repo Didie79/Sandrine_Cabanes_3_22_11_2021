@@ -15,6 +15,9 @@
      margin:0;
      width:100%;
      background:white;
+     position:relative;
+     box-shadow:0 0 2px 1px #cfcfcf;
+     
     
      
     }
@@ -32,11 +35,11 @@
 /*début main*/
     /*section city*/
     .zone_city{
-         display:flex;
+        display:flex;
         justify-content: center;
-         background: #eaeaea;
+        background: #eaeaea;
     
-}
+    }
     .map{
         display:flex;
         align-items: center;
@@ -48,24 +51,24 @@
 }
             /*section reservation  */
     .reservation{   
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    background-color:#f6f6f6; 
-    padding:34px;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        background-color:#f6f6f6; 
+        padding:35px;
 
-    .reservation_title{       
+        .reservation_title{       
         text-align:center;
         font-weight: bold;
         
     }       
-    .reservation_stitle{        
+        .reservation_stitle{        
         text-align: center;       
         margin-top:3px;
     }         
-    .reservation_recherche{
+        .reservation_recherche{
         display: flex;
         text-align: center;      
         background: linear-gradient(to top, #9356dc, #FF79DA );
@@ -79,27 +82,26 @@
         color:white;
         font-size:14px;                
     } 
-}  
- 
+}   
         /*section fonctionnement*/
     .fonctionnement{       
         width:100%;
 
-    .contenaire_tri{
+        .contenaire_tri{
         width:95%;
         
     }
-    .tri_title{
+        .tri_title{
         font-weight: bold;
         margin-left:30px;
     }
-    .tri_liste{
+        .tri_liste{
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
     }
               
-    .no_list{  
+        .no_list{  
         display:flex;  
         align-items: center;
         background-color:#f6f6f6;        
@@ -130,7 +132,7 @@
             margin:0 1.7rem;
         }                     
     }
-    .no_listviolet{
+        .no_listviolet{
         display:flex;  
         align-items: center;               
         border: 2px solid #f2f2f2;
@@ -160,34 +162,32 @@
              margin:0 1.7rem;
             }   
     } 
-}        
+}      
+                     /*section restaurants*/
+    .restaurants{
+        width:100%; 
 
-
-        /*section restaurants*/
-.restaurants{
-    width:100%; 
-
-    .restaurants_title{ 
-    margin-left:20px;
-    margin-top:50px;
-    }
+        .restaurants_title{ 
+             margin-left:20px;
+             margin-top:50px;
+        }
         /*zone contenaire des cartes*/
-    .contenair_card{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color:#f6f6f6;
-    padding-bottom:50px;
-    }
+        .contenair_card{
+             display:flex;
+             flex-direction: column;
+             flex-wrap: nowrap;
+             background-color:#f6f6f6;
+             padding-bottom:50px;
+        }
         /*les cartes*/
-    .card_resto{
-    display:flex;
-    flex-direction: column;
-    }
-    .card_link{
+        .card_resto{
+         display:flex;
+        flex-direction: column;
+        }
+        .card_link{
   text-decoration: none;      
-    }
-    .card_diner{  
+         }
+        .card_diner{  
     display:flex;
     flex-direction: column; 
     background-color:white;
@@ -204,18 +204,18 @@
      transition: 0.1s;
      list-style: none; 
      
-    }    
-    .card_image{
+        }    
+        .card_image{
     display: flex;
-    }
+        }
 
-    .card_diner img{
+        .card_diner img{
     width:100%;
     height:195px;
     object-fit:cover;
     border-radius:20px 20px 0 0;
-    }
-    .nouveaute{
+        }
+        .nouveaute{
         position: absolute;
          right:30px ;
          background-color:#99e2d0;
@@ -223,8 +223,8 @@
          font-weight: bold;
          padding:6px 5px;
          margin:10px;
-    }
-    .zone_texte{
+         }
+        .zone_texte{
         display:flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -252,15 +252,15 @@
         }      
     }
 }  
-   
-footer{
-    display:flex;
-    background-color:#353535;
-    list-style: none;    
-    width:100%;
-    position: relative;
+            /*footer*/
+    footer{
+         display:flex;
+         background-color:#353535;
+        list-style: none;    
+        width:100%;
+        position: relative;
     
-    h3{
+        h3{
         
         font-family : 'Shrikhand', 'cursif' ;
         color:white;
@@ -284,21 +284,21 @@ footer{
     }
 }
 
-                    /*PAGE DEUX A QUATRE*/
-    header{
+                    /*PAGE DEUX A QUATRE */
+    .header2{
         display:flex;
         justify-content:center;
         align-items: center;
         position:absolute;
+
         .arrow{
         padding-right:2rem;
         font-size:20px;
         
-        }
-    }               
+    }
+}               
    
-   .imgfond{
-        
+   .imgfond{        
         img{
          width:100%;
          height:350px;                       
@@ -307,79 +307,97 @@ footer{
          position:relative;
     }
 }     
-
+                /*zone main*/
+                /*section fond_page*/
     .fond_page{
-    background-color:#f6f6f6;
-    border-radius: 40px 40px 0 0;  
-    width:100%; 
-    z-index:1; 
-    position:relative;   
+        display:flex;
+        flex-direction: column;
+        background-color:#f6f6f6;
+        border-radius: 40px 40px 0 0;  
+        width:100%; 
+        z-index:1; 
+        position:relative;   
     
+                    /*les menus*/
+                 
+        .menu{
+            display:flex;  
+            flex-direction:row;
+            flex-wrap:nowrap;   
+            justify-content:space-between; 
+            align-items:baseline;   
 
-    .menu{
-        display:flex;  
-        flex-direction: row;
-        flex-wrap: nowrap;   
-        justify-content: space-between; 
-        align-items:baseline;   
-
-        .title_p{
-        margin-left:40px; 
-        padding-top:25px;          
+            .title_p{
+                margin-left:40px; 
+                padding-top:25px;          
         }                                                                        
-        .icone_heart{
-        padding-right:25px;
-        font-size: 25px;                                 
+            .icone_heart{
+                padding-right:25px;
+                font-size: 25px;                                 
         }  
          
-    }                                                                                                 
+    }           
+                /*zone titre des plats*/ 
+    .entree,.plat,.dessert{
+        display:flex;
+        flex-direction:column; 
+        
         .h3menu{
-        padding-left: 25px;
+        text-transform: uppercase;
+        margin-left:20px;
+        height:5px;
         }
-    .card_fond{
-    display:flex;  
-    flex-direction: row;  
-    flex-wrap:wrap;  
-    justify-content: space-between;  
-    background-color:white;
-    width: 95%;
-    height: 70px;
-    border-radius: 20px;       
-    box-shadow: 0 1px 3px 1px  #0000001e;    
-    text-decoration: none;
-    margin-left:10px;
-    margin-bottom: 25px;
-     cursor: pointer;
-     transition: 0.1s;
-     list-style: none; 
+        .trait{
+            border-bottom: solid 3px #99e2d0;
+            max-width:3.2rem;
+            margin-bottom:20px;
+            margin-left:20px;
+            
+    }
 
+}        
+            .card_fond{
+                 display:flex;  
+                 flex-direction: row;  
+                 flex-wrap:wrap;  
+                justify-content: space-between;  
+                background-color:white;
+                width: 95%;
+                height: 80px;
+                 border-radius: 20px;       
+                box-shadow: 0 1px 3px 1px  #0000001e;    
+                text-decoration: none;
+                margin-left:10px;
+                margin-bottom: 25px;
+                cursor: pointer;
+                transition: 0.1s;
+                list-style: none; 
+                    /*zone des prix*/
         .card_eat{            
-            line-height: 2px;
+            line-height: 13px;
             padding-left:10px;
             max-width:calc(100% - 40px);
                      
         }    
-          h4{
-            text-overflow:ellipsis;
+          p{
             overflow: hidden;
-            white-space:wrap; 
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
                
         .eatprice{
-          padding: 2.2rem 1rem 0 0; 
+          padding: 3.3rem 1rem 0 0; 
           font-weight: bold; 
           max-width:40px;          
-        }
-        .eatcolor{
-            
-        }
+        }       
         
-    }
-    
-    .buttons{
-        display:flex;
-        justify-content: center;
-        padding:2rem;
+        }
+}
+
+        .buttons{
+            display:flex;
+            justify-content: center;
+            padding:2rem;
 
         .button{
         display: flex;
@@ -396,39 +414,39 @@ footer{
         font-size:14px;
         padding:1.5rem 0;    
         }
-    }
-}         
-    /*VERSION TABLET*/
+        }
+           
+         
+                     /*VERSION TABLET*/
                 /*section card zone restaurant*/
 @media(min-width:600px){
     .reservation{
         .reservation_title{
             font-size: 30px;
-        }
+    }
         .reservation_stitle{
              font-size:18px;
-        }
+    }
         .reservation_recherche{
-             width:550px;
+             width:590px;
              height:50px;
              font-size:18px;
-        }
     }
+}
     .restaurants{       
         .card_resto{
           flex-direction:row; 
           flex-wrap: wrap; 
-        }
+    }
         .card_link{
             width:50%;
-        }
+    }
         .nouveaute{
           right:auto; 
-          margin-left:32%;              
-            
-        }
-
+          margin-left:32%;             
     }
+
+}
 }
             /*header*/
 @media(min-width:768px){
@@ -459,8 +477,14 @@ footer{
             
         }
         
-    }
-
+}
+                /*section page deux a quatre*/
+        
+                
+    .entree,.plat,.dessert {
+    flex-direction:row;
+}
+     
                  /*zone FOOTER*/
    
     .listcontact{  
@@ -479,23 +503,36 @@ footer{
     .restaurants{      
          .card_link{
             width:25%;            
-        } 
+    } 
         .card_diner{              
             width: 90%;
             height: 268px;                                   
             margin-left:15px;
-            margin-bottom: 25px;           
-             
-        }    
+            margin-bottom: 25px;                
+    }    
         
         .nouveaute{
             right:auto; 
-            margin-left:15%;              
-              
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+            margin-left:15%;          
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
+}
+    .fond_page{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        align-items:center;
+        justify-content:space-evenly;
+
+        .entree,.plat,.dessert {
+        display:flex;
+        flex-direction: row;
+    }    
+        .buttons{
+        display:flex;
+        flex-direction: column;
     }
-
+}
 }
 @media screen and (min-width:1148px){  
 
@@ -504,24 +541,26 @@ footer{
      flex-wrap: wrap;
      justify-content:space-between;
      align-items:baseline;
+     padding:50px;
 
         .reservation_title{
-        font-size: 30px;            
-        }
-        .reservation_stitle{
-         font-size:18px;
-        }
-        .reservation_recherche{            
-         width:500px;
-         height:60px;
-         font-size:18px; 
-        } 
-        .r2{
-    order:1;        
-         }
-         .r3{
-             align-self:flex-end;
-             margin-top: 50px;
-         }
+        font-size:30px;            
     }
+    .reservation_stitle{
+         font-size:20px;
+    }
+        .reservation_recherche{            
+         width:600px;
+         height:60px;
+         font-size:20px; 
+    } 
+        .r2{
+            order:1;        
+    }
+        .r3{
+             align-self:flex-end;
+             margin-top:50px;
+             margin-right:3.4rem;
+    }
+}
 }

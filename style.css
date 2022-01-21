@@ -16,6 +16,8 @@ header {
   margin: 0;
   width: 100%;
   background: white;
+  position: relative;
+  box-shadow: 0 0 2px 1px #cfcfcf;
 }
 
 #logo, h1, h2 {
@@ -53,7 +55,7 @@ header {
   text-align: center;
   justify-content: center;
   background-color: #f6f6f6;
-  padding: 34px;
+  padding: 35px;
 }
 .reservation .reservation_title {
   text-align: center;
@@ -238,6 +240,7 @@ header {
   margin: 10px 10px 25px 30px;
 }
 
+/*footer*/
 footer {
   display: flex;
   background-color: #353535;
@@ -265,14 +268,14 @@ footer .icone_partenaire {
   padding-right: 8px;
 }
 
-/*PAGE DEUX A QUATRE*/
-header {
+/*PAGE DEUX A QUATRE */
+.header2 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
 }
-header .arrow {
+.header2 .arrow {
   padding-right: 2rem;
   font-size: 20px;
 }
@@ -286,12 +289,18 @@ header .arrow {
   position: relative;
 }
 
+/*zone main*/
+/*section fond_page*/
 .fond_page {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   width: 100%;
   z-index: 1;
   position: relative;
+  /*les menus*/
+  /*zone titre des plats*/
 }
 .fond_page .menu {
   display: flex;
@@ -308,8 +317,20 @@ header .arrow {
   padding-right: 25px;
   font-size: 25px;
 }
-.fond_page .h3menu {
-  padding-left: 25px;
+.fond_page .entree, .fond_page .plat, .fond_page .dessert {
+  display: flex;
+  flex-direction: column;
+}
+.fond_page .entree .h3menu, .fond_page .plat .h3menu, .fond_page .dessert .h3menu {
+  text-transform: uppercase;
+  margin-left: 20px;
+  height: 5px;
+}
+.fond_page .entree .trait, .fond_page .plat .trait, .fond_page .dessert .trait {
+  border-bottom: solid 3px #99e2d0;
+  max-width: 3.2rem;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 .fond_page .card_fond {
   display: flex;
@@ -318,7 +339,7 @@ header .arrow {
   justify-content: space-between;
   background-color: white;
   width: 95%;
-  height: 70px;
+  height: 80px;
   border-radius: 20px;
   box-shadow: 0 1px 3px 1px #0000001e;
   text-decoration: none;
@@ -327,28 +348,30 @@ header .arrow {
   cursor: pointer;
   transition: 0.1s;
   list-style: none;
+  /*zone des prix*/
 }
 .fond_page .card_fond .card_eat {
-  line-height: 2px;
+  line-height: 13px;
   padding-left: 10px;
   max-width: calc(100% - 40px);
 }
-.fond_page .card_fond h4 {
-  text-overflow: ellipsis;
+.fond_page .card_fond p {
   overflow: hidden;
-  white-space: wrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .fond_page .card_fond .eatprice {
-  padding: 2.2rem 1rem 0 0;
+  padding: 3.3rem 1rem 0 0;
   font-weight: bold;
   max-width: 40px;
 }
-.fond_page .buttons {
+
+.buttons {
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
-.fond_page .buttons .button {
+.buttons .button {
   display: flex;
   text-align: center;
   background: linear-gradient(to top, #9356dc, #FF79DA);
@@ -374,7 +397,7 @@ header .arrow {
     font-size: 18px;
   }
   .reservation .reservation_recherche {
-    width: 550px;
+    width: 590px;
     height: 50px;
     font-size: 18px;
   }
@@ -414,6 +437,11 @@ header .arrow {
     text-align: left;
   }
 
+  /*section page deux a quatre*/
+  .entree, .plat, .dessert {
+    flex-direction: row;
+  }
+
   /*zone FOOTER*/
   .listcontact {
     display: flex;
@@ -440,6 +468,22 @@ header .arrow {
     right: auto;
     margin-left: 15%;
   }
+
+  .fond_page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .fond_page .entree, .fond_page .plat, .fond_page .dessert {
+    display: flex;
+    flex-direction: row;
+  }
+  .fond_page .buttons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 1148px) {
   .reservation {
@@ -447,17 +491,18 @@ header .arrow {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    padding: 50px;
   }
   .reservation .reservation_title {
     font-size: 30px;
   }
   .reservation .reservation_stitle {
-    font-size: 18px;
+    font-size: 20px;
   }
   .reservation .reservation_recherche {
-    width: 500px;
+    width: 600px;
     height: 60px;
-    font-size: 18px;
+    font-size: 20px;
   }
   .reservation .r2 {
     order: 1;
@@ -465,5 +510,6 @@ header .arrow {
   .reservation .r3 {
     align-self: flex-end;
     margin-top: 50px;
+    margin-right: 3.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
