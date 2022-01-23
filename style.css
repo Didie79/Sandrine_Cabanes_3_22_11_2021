@@ -20,7 +20,9 @@ header {
   box-shadow: 0 0 2px 1px #cfcfcf;
 }
 
-#logo, h1, h2 {
+#logo,
+h1,
+h2 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", "cursif";
@@ -68,9 +70,9 @@ header {
 .reservation .reservation_recherche {
   display: flex;
   text-align: center;
-  background: linear-gradient(to top, #9356dc, #FF79DA);
+  background: linear-gradient(to top, #9356dc, #ff79da);
   border-radius: 30px;
-  border: #FF79DA;
+  border: #ff79da;
   width: 180px;
   height: 40px;
   align-items: center;
@@ -260,7 +262,8 @@ footer li {
   color: white;
   list-style: none;
 }
-footer .icone_diner, footer .icone_partenaire {
+footer .icone_diner,
+footer .icone_partenaire {
   padding-right: 12px;
 }
 footer .icone_partenaire {
@@ -317,16 +320,22 @@ footer .icone_partenaire {
   padding-right: 25px;
   font-size: 25px;
 }
-.fond_page .entree, .fond_page .plat, .fond_page .dessert {
+.fond_page .entree,
+.fond_page .plat,
+.fond_page .dessert {
   display: flex;
   flex-direction: column;
 }
-.fond_page .entree .h3menu, .fond_page .plat .h3menu, .fond_page .dessert .h3menu {
+.fond_page .entree .h3menu,
+.fond_page .plat .h3menu,
+.fond_page .dessert .h3menu {
   text-transform: uppercase;
   margin-left: 20px;
   height: 5px;
 }
-.fond_page .entree .trait, .fond_page .plat .trait, .fond_page .dessert .trait {
+.fond_page .entree .trait,
+.fond_page .plat .trait,
+.fond_page .dessert .trait {
   border-bottom: solid 3px #99e2d0;
   max-width: 3.2rem;
   margin-bottom: 20px;
@@ -373,9 +382,9 @@ footer .icone_partenaire {
 .buttons .button {
   display: flex;
   text-align: center;
-  background: linear-gradient(to top, #9356dc, #FF79DA);
+  background: linear-gradient(to top, #9356dc, #ff79da);
   border-radius: 30px;
-  border: #FF79DA;
+  border: #ff79da;
   width: 180px;
   height: 40px;
   align-items: center;
@@ -429,7 +438,8 @@ footer .icone_partenaire {
   .fonctionnement .contenaire_tri .tri_liste .l3 {
     margin-top: 60px;
   }
-  .fonctionnement .contenaire_tri .tri_liste .no_list, .fonctionnement .contenaire_tri .tri_liste .no_listviolet {
+  .fonctionnement .contenaire_tri .tri_liste .no_list,
+.fonctionnement .contenaire_tri .tri_liste .no_listviolet {
     height: 50px;
   }
   .fonctionnement .contenaire_tri .tri_liste h4 {
@@ -437,8 +447,19 @@ footer .icone_partenaire {
   }
 
   /*section page deux a quatre*/
-  .entree, .plat, .dessert {
+  .entree,
+.plat,
+.dessert {
     flex-direction: row;
+  }
+
+  .h3menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .trait {
+    margin-left: 50%;
   }
 
   /*zone FOOTER*/
@@ -475,7 +496,9 @@ footer .icone_partenaire {
     align-items: center;
     justify-content: space-evenly;
   }
-  .fond_page .entree, .fond_page .plat, .fond_page .dessert {
+  .fond_page .entree,
+.fond_page .plat,
+.fond_page .dessert {
     display: flex;
     flex-direction: row;
   }
