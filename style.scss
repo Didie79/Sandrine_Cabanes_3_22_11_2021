@@ -181,7 +181,7 @@ h2 {
     flex-direction: column;
     background-color: white;
     width: 90%;
-    height: 268px;
+    
     border-radius: 20px 0 20px 0;
     background-color: white;
     border-radius: 20px;
@@ -240,6 +240,7 @@ h2 {
     }
   }
 }
+/*Fin MAIN*/
 /*footer*/
 footer {
   display: flex;
@@ -271,6 +272,7 @@ footer {
 }
 
 /*PAGE DEUX A QUATRE */
+/*header*/
 .header2 {
   display: flex;
   justify-content: center;
@@ -285,8 +287,7 @@ footer {
 
 .imgfond {
   img {
-    width: 100%;
-    height: 350px;
+    width: 100%;    
     top: 4.5rem;
     object-fit: cover;
     position: relative;
@@ -423,7 +424,7 @@ footer {
     }
     .nouveaute {
       right: auto;
-      margin-left: 32%;
+      margin-left: 30%;
     }
   }
 }
@@ -460,14 +461,15 @@ footer {
   .plat,
   .dessert {
     flex-direction: row;
-  }
+  
   .h3menu {
     display: flex;
     justify-content: center;
   }
   .trait {
-    margin-left: 50%;
+    margin-left:46%;
   }
+}
   /*zone FOOTER*/
 
   .listcontact {
@@ -516,22 +518,22 @@ footer {
     }
   }
 }
-@media screen and (min-width: 1148px) {
+@media screen and (min-width: 1148px) and (max-width:1950px){
   .reservation {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    padding: 50px;
+    padding: 60px;
 
     .reservation_title {
-      font-size: 30px;
+      font-size: 31px;
     }
     .reservation_stitle {
-      font-size: 20px;
+      font-size: 21px;
     }
     .reservation_recherche {
-      width: 600px;
+      width: 615px;
       height: 60px;
       font-size: 20px;
     }
@@ -541,7 +543,8 @@ footer {
     .r3 {
       align-self: flex-end;
       margin-top: 50px;
-      margin-right: 3.4rem;
+      margin-left:auto;
+      width:615px;
     }
   }
 }
