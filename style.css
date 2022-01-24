@@ -359,7 +359,7 @@ footer .icone_partenaire {
   /*zone des prix*/
 }
 .fond_page .card_fond .card_eat {
-  line-height: 13px;
+  line-height: 16px;
   padding-left: 10px;
   max-width: calc(100% - 40px);
 }
@@ -369,7 +369,7 @@ footer .icone_partenaire {
   text-overflow: ellipsis;
 }
 .fond_page .card_fond .eatprice {
-  padding: 3.3rem 1rem 0 0;
+  padding: 3.7rem 1rem 0 0;
   font-weight: bold;
   max-width: 40px;
 }
@@ -421,8 +421,36 @@ footer .icone_partenaire {
     right: auto;
     margin-left: 30%;
   }
+
+  /*SECTION PAGE UN A QUATRE*/
+  .fond_page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fond_page .menu {
+    justify-content: space-evenly;
+  }
+  .fond_page .menu .icone_heart {
+    padding-left: 10px;
+  }
+  .fond_page .menutrait {
+    margin-left: 40%;
+  }
+  .fond_page .card_fond {
+    width: 100%;
+  }
+  .fond_page .card_fond .card_eat {
+    line-height: 16px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-/*header*/
+/*header PAGE ACCUEIL*/
 @media (min-width: 768px) {
   /*zone fonctionnement*/
   .fonctionnement {
@@ -447,23 +475,6 @@ footer .icone_partenaire {
   }
 
   /*section page deux a quatre*/
-  .entree,
-.plat,
-.dessert {
-    flex-direction: row;
-  }
-  .entree .h3menu,
-.plat .h3menu,
-.dessert .h3menu {
-    display: flex;
-    justify-content: center;
-  }
-  .entree .trait,
-.plat .trait,
-.dessert .trait {
-    margin-left: 46%;
-  }
-
   /*zone FOOTER*/
   .listcontact {
     display: flex;
@@ -488,13 +499,28 @@ footer .icone_partenaire {
   }
   .restaurants .nouveaute {
     right: auto;
-    margin-left: 15%;
+    margin-left: 14%;
   }
 
+  .zone_footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .zone_footer ul li {
+    padding-left: 20px;
+  }
+
+  .zone_info h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  /*PAGE DEUX A QUATRE*/
   .fond_page {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -502,7 +528,7 @@ footer .icone_partenaire {
 .fond_page .plat,
 .fond_page .dessert {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .fond_page .buttons {
     display: flex;
@@ -536,5 +562,15 @@ footer .icone_partenaire {
     margin-top: 50px;
     margin-left: auto;
     width: 615px;
+  }
+
+  /*zone restaurants carte*/
+  .restaurants .nouveaute {
+    margin-left: 16%;
+  }
+
+  /*zone image page deux a cinq*/
+  .imgfond img {
+    max-height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
