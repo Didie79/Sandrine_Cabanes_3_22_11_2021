@@ -269,6 +269,10 @@ footer {
     font-size: small;
     padding-right: 8px;
   }
+  .contact_link {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /*PAGE DEUX A QUATRE */
@@ -316,10 +320,19 @@ footer {
     .title_p {
       margin-left: 40px;
       padding-top: 25px;
-    }
+    } /*le coeur*/
     .icone_heart {
       padding-right: 25px;
       font-size: 25px;
+      background-color: #f2f2f2;
+      -webkit-transition: 2s;
+      background-color: 3s;
+      cursor: pointer;
+      color: black;
+    }
+    .icone_heart:hover {
+      background-color: #ff79da;
+      opacity: 1;
     }
   }
   /*zone titre des plats*/
@@ -428,26 +441,29 @@ footer {
     }
   }
   /*SECTION PAGE UN A QUATRE*/
+  .imgfond {
+    img {
+      max-height: 30rem;
+    }
+  }
   .fond_page {
-    flex-direction: column;
-    align-items: center;
     .menu {
-      justify-content: space-evenly;
+      justify-content: center;
       .icone_heart {
         padding-left: 10px;
       }
-    } 
+    }
+    .entree,
+    .plat,
+    .dessert {
+      align-items: center;
+    }
     .menutrait {
-        margin-left: 40%;
-      }
+    }
     .card_fond {
-      width: 100%;
-
       .card_eat {
         line-height: 16px;
       }
-
-     
     }
   }
   footer {
@@ -517,20 +533,20 @@ footer {
     }
   }
   .zone_footer {
-      ul{
-        display: flex;
-        flex-direction: row;
-      }
-      ul li{
-      padding-left:20px;
+    ul {
+      display: flex;
+      flex-direction: row;
     }
+    ul li {
+      padding-left: 20px;
     }
-    .zone_info h3{
-      display:flex;
-      justify-content: center;
-      font-size: 24px;
-    }
-  
+  }
+  .zone_info h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+
   /*PAGE DEUX A QUATRE*/
 
   .fond_page {
@@ -545,12 +561,14 @@ footer {
     .dessert {
       display: flex;
       flex-direction: column;
+      .card_fond {
+        width: 100%;
+      }
     }
     .buttons {
       display: flex;
       flex-direction: column;
     }
-    
   }
 }
 @media screen and (min-width: 1148px) and (max-width: 1950px) {
@@ -588,13 +606,4 @@ footer {
       margin-left: 16%;
     }
   }
-  /*zone image page deux a cinq*/
-  
-    .imgfond {
-      img {
-        max-height: 450px;
-      }
-    }
- 
- 
 }

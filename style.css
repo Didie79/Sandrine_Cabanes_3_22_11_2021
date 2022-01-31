@@ -270,6 +270,10 @@ footer .icone_partenaire {
   font-size: small;
   padding-right: 8px;
 }
+footer .contact_link {
+  color: white;
+  text-decoration: none;
+}
 
 /*PAGE DEUX A QUATRE */
 /*header*/
@@ -311,6 +315,7 @@ footer .icone_partenaire {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: baseline;
+  /*le coeur*/
 }
 .fond_page .menu .title_p {
   margin-left: 40px;
@@ -319,6 +324,15 @@ footer .icone_partenaire {
 .fond_page .menu .icone_heart {
   padding-right: 25px;
   font-size: 25px;
+  background-color: #f2f2f2;
+  -webkit-transition: 2s;
+  background-color: 3s;
+  cursor: pointer;
+  color: black;
+}
+.fond_page .menu .icone_heart:hover {
+  background-color: #ff79da;
+  opacity: 1;
 }
 .fond_page .entree,
 .fond_page .plat,
@@ -423,21 +437,20 @@ footer .icone_partenaire {
   }
 
   /*SECTION PAGE UN A QUATRE*/
-  .fond_page {
-    flex-direction: column;
-    align-items: center;
+  .imgfond img {
+    max-height: 30rem;
   }
+
   .fond_page .menu {
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .fond_page .menu .icone_heart {
     padding-left: 10px;
   }
-  .fond_page .menutrait {
-    margin-left: 40%;
-  }
-  .fond_page .card_fond {
-    width: 100%;
+  .fond_page .entree,
+.fond_page .plat,
+.fond_page .dessert {
+    align-items: center;
   }
   .fond_page .card_fond .card_eat {
     line-height: 16px;
@@ -530,6 +543,11 @@ footer .icone_partenaire {
     display: flex;
     flex-direction: column;
   }
+  .fond_page .entree .card_fond,
+.fond_page .plat .card_fond,
+.fond_page .dessert .card_fond {
+    width: 100%;
+  }
   .fond_page .buttons {
     display: flex;
     flex-direction: column;
@@ -567,10 +585,5 @@ footer .icone_partenaire {
   /*zone restaurants carte*/
   .restaurants .nouveaute {
     margin-left: 16%;
-  }
-
-  /*zone image page deux a cinq*/
-  .imgfond img {
-    max-height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
